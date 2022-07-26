@@ -41,11 +41,8 @@ const maximumWealth = (accounts) => {
   for (let i = 0; i < accounts.length; i++) {
     let currentCustomerWealth = 0;
     for (let j = 0; j < accounts[i].length; j++) {
-      console.log("aaa", accounts[i][j]);
-      console.log("i", accounts[i]);
       currentCustomerWealth += accounts[i][j];
     }
-    console.log("mw", maxWealthSoFar);
     maxWealthSoFar = Math.max(maxWealthSoFar, currentCustomerWealth);
   }
   return maxWealthSoFar;
@@ -60,3 +57,4 @@ console.log(
 // bn1  bnk2   bnk3
 // 1     2     3     => 6   custA
 // 3     1     1     => 5    custB
+//output: 6
